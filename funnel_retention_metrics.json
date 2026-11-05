@@ -1,0 +1,111 @@
+{
+  "dataset": "Avito Context Ad Clicks (rel-avito, 2015-04-25 to 2015-05-20)",
+  "dq_summary": {
+    "raw_events_total": 9336825,
+    "raw_search_events": 2579289,
+    "raw_visit_events": 6454562,
+    "raw_phone_request_events": 302974,
+    "clean_events_total": 9037139,
+    "filtered_events_total": 299686,
+    "filtered_events_pct": 3.21,
+    "null_user_id_events": 32713,
+    "bot_ip_events": 204481,
+    "client_bounce_duplicates_lt_3s": 62492,
+    "unique_clean_users": 98031,
+    "ads_total": 5960558,
+    "ads_valid_price_gt_0": 5497033,
+    "ads_zero_or_null_price": 463525
+  },
+  "funnel_steps": [
+    {
+      "step": "1. Поисковая сессия (SearchInfo)",
+      "users": 98031,
+      "step_cr_pct": 100.0,
+      "dropoff_pct": 0.0
+    },
+    {
+      "step": "2. Просмотр карточки объявления (VisitStream >= 1)",
+      "users": 76471,
+      "step_cr_pct": 78.01,
+      "dropoff_pct": 21.99
+    },
+    {
+      "step": "3. Глубокий просмотр / сравнение (VisitStream >= 5)",
+      "users": 61179,
+      "step_cr_pct": 80.0,
+      "dropoff_pct": 20.0
+    },
+    {
+      "step": "4. Запрос телефона продавца (PhoneRequestsStream)",
+      "users": 35536,
+      "step_cr_pct": 58.09,
+      "dropoff_pct": 41.91
+    }
+  ],
+  "overall_cr_pct": 36.25,
+  "retention_overall": {
+    "D1_pct": 26.05,
+    "D3_pct": 20.77,
+    "D7_pct": 23.89,
+    "D14_pct": 27.14
+  },
+  "overall_marketplace_metrics": {
+    "avg_contacted_ad_price_rub": 52004.78,
+    "median_contacted_ad_price_rub": 9000.0,
+    "search_stream_impressions_total": 9254702,
+    "regular_ads_impressions": 3811571,
+    "highlighted_vip_impressions": 949764,
+    "context_ads_impressions": 4493367,
+    "context_ads_ctr_pct": 0.6
+  },
+  "segments": [
+    {
+      "segment": "Гости | Основная ОС",
+      "users": 42875,
+      "contact_users": 12906,
+      "overall_cr_pct": 30.1,
+      "retention_d1_pct": 21.08,
+      "retention_d7_pct": 20.1,
+      "avg_views_per_user": 49.3,
+      "avg_contacts_per_user": 2.17,
+      "avg_contacted_ad_price_rub": 45003.09,
+      "contacted_gmv_per_user_rub": 85022.45
+    },
+    {
+      "segment": "Гости | Мобильные и др. ОС",
+      "users": 34894,
+      "contact_users": 10044,
+      "overall_cr_pct": 28.78,
+      "retention_d1_pct": 21.44,
+      "retention_d7_pct": 19.92,
+      "avg_views_per_user": 44.5,
+      "avg_contacts_per_user": 1.98,
+      "avg_contacted_ad_price_rub": 44001.65,
+      "contacted_gmv_per_user_rub": 71997.09
+    },
+    {
+      "segment": "Авторизованные | Основная ОС",
+      "users": 12021,
+      "contact_users": 7566,
+      "overall_cr_pct": 62.94,
+      "retention_d1_pct": 44.05,
+      "retention_d7_pct": 34.02,
+      "avg_views_per_user": 131.0,
+      "avg_contacts_per_user": 6.9,
+      "avg_contacted_ad_price_rub": 48124.01,
+      "contacted_gmv_per_user_rub": 274965.77
+    },
+    {
+      "segment": "Авторизованные | Мобильные и др. ОС",
+      "users": 8241,
+      "contact_users": 5020,
+      "overall_cr_pct": 60.91,
+      "retention_d1_pct": 44.05,
+      "retention_d7_pct": 34.84,
+      "avg_views_per_user": 123.3,
+      "avg_contacts_per_user": 6.3,
+      "avg_contacted_ad_price_rub": 45970.91,
+      "contacted_gmv_per_user_rub": 248778.85
+    }
+  ]
+}
